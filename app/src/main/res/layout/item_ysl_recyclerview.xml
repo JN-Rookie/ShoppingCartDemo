@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="152dp"
+		android:layout_centerVertical="true"
+		android:layout_toRightOf="@+id/cb_select_child">
+
+		<TextView
+			android:id="@+id/title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="10dp"
+			android:text="钢筋原材"
+			android:textSize="20sp"
+			android:textStyle="bold"/>
+		<TextView
+			android:id="@+id/address"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/title"
+			android:layout_marginLeft="2dp"
+			android:text="某某小区5号楼"
+			android:textSize="18sp"/>
+		<TextView
+			android:id="@+id/leibie"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/address"
+			android:text="钢筋混凝土用热轧带肋钢筋"
+			android:textSize="18sp"/>
+		<TextView
+			android:id="@+id/shuxing"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/leibie"
+			android:text="HPB335"
+			android:textSize="18sp"/>
+		<TextView
+			android:id="@+id/fuhao"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/leibie"
+			android:layout_marginLeft="10dp"
+			android:layout_toRightOf="@+id/shuxing"
+			android:text="$"
+			android:textSize="18sp"/>
+		<TextView
+			android:id="@+id/jiage"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/leibie"
+			android:layout_toRightOf="@+id/fuhao"
+			android:text="8"
+			android:textSize="18sp"/>
+		<TextView
+			android:id="@+id/jincheng"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/leibie"
+			android:layout_marginLeft="10dp"
+			android:layout_toRightOf="@+id/jiage"
+			android:text="初检"
+			android:textSize="18sp"/>
+		<TextView
+			android:id="@+id/danwei"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/shuxing"
+			android:text="济南钢铁厂"
+			android:textSize="18sp"/>
+
+		<TextView
+			android:id="@+id/date"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_below="@+id/danwei"
+			android:layout_marginRight="10dp"
+			android:text="2016-05-01"
+			android:textSize="14sp"/>
+		<TextView
+			android:id="@+id/zhuangtai"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/danwei"
+			android:layout_marginRight="15dp"
+			android:layout_toLeftOf="@+id/linear"
+			android:text="已提交"
+			android:textColor="@color/green500"
+			android:textSize="14sp"
+			android:textStyle="bold"/>
+
+		<LinearLayout
+			android:id="@+id/linear"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/danwei"
+			android:layout_marginRight="15dp"
+			android:layout_toLeftOf="@+id/date">
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="受理日期："
+				android:textSize="14sp"/>
+
+
+			<TextView
+				android:id="@+id/shoulidate"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="2016-05-01"
+				android:textSize="14sp"/>
+
+		</LinearLayout>
+	</RelativeLayout>
+	<CheckBox
+		android:id="@+id/cb_select_child"
+		style="@style/CustomCheckboxTheme"
+		android:layout_width="40dp"
+		android:layout_height="40dp"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:focusable="false"
+		android:focusableInTouchMode="false"/>
+
+</RelativeLayout>
+
+
+
